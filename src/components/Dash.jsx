@@ -28,7 +28,7 @@ const Dash = () => {
           as="img"
           src="/coin.png"
           maxW="350px"
-          transition="transform 0.3s ease-in-out"
+          transition="transform 0.1s ease-in-out"
           transform={isScaled ? 'scale(1.1)' : 'scale(1.0)'}
           onClick={handleImageClick}
           cursor="pointer"
