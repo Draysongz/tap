@@ -14,7 +14,7 @@ const TapCard = ({ text, coin, className }) => {
                 <p className="text-white text-lg ml-2 font-semibold">{text}</p>
                 <p className="flex text-white">
                 <Image 
-                    src={"/sharp.gif"}
+                    src={"/x1.png"}
                     width={30}
                     height={30}
                 />

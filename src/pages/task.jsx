@@ -27,7 +27,7 @@ const Tasks = () => {
             <div>
                 <p className="font-bold text-4xl flex justify-center text-white pb-4">
                     <Image 
-                        src={"/sharp.gif"}
+                        src={"/x1.png"}
                         width={60}
                         height={60}
                     />

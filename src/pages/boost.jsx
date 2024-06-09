@@ -29,7 +29,7 @@ const Boost = () => {
                 <p className="text-gray-600 text-center font-semibold">Your Share balance</p>
                 <p className="font-bold text-4xl flex justify-center text-white pb-4">
                     <Image 
-                        src={"/coin.png"}
+                        src={"/x3.png"}
                         width={50}
                         height={50}
                     />
