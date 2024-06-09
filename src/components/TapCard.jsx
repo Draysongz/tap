@@ -24,7 +24,7 @@ const TapCard = ({ text, coin, className }) => {
             </div>
             <button className="border px-2 rounded-md bg-gray-900 border-[#10171d] text-gray-500">Claim</button>
         </div>
-        <Progress value={50} maxValue={100} />
+        <Progress value={0} maxValue={100} />
         </div>
     )
 }
