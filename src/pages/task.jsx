@@ -23,7 +23,7 @@ const Tasks = () => {
      ];
 
     return(
-        <div className="pt-10 bg-[#10171d] h-screen">
+        <div className="pt-10 bg-[#10171d] h-screen pb-12">
             <div>
                 <p className="font-bold text-4xl flex justify-center text-white pb-4">
                     <Image 
@@ -31,7 +31,7 @@ const Tasks = () => {
                         width={50}
                         height={50}
                     />
-                    1 001
+                    123 434
                 </p>
                 <p className="flex justify-center text-lg text-gray-400 font-semibold">
                 <CiTrophy className="text-[#cd7f32] w-5 h-5 mr-1 mt-1"/>
@@ -49,17 +49,17 @@ const Tasks = () => {
                 <TapCard 
                     text={"Silver"}
                     coin={"5000"}
-                    className={"text-[#cd7f32] w-10 h-10 mr-1 mt-1"}
+                    className={"text-violet-400 w-10 h-10 mr-1 mt-1"}
                 />
                  <TapCard 
                     text={"Gold"}
                     coin={"10000"}
-                    className={"text-[#cd7f32] w-10 h-10 mr-1 mt-1"}
+                    className={"text-yellow-500 w-10 h-10 mr-1 mt-1"}
                 />
                  <TapCard 
                     text={"Platinum"}
                     coin={"30000"}
-                    className={"text-[#cd7f32] w-10 h-10 mr-1 mt-1"}
+                    className={"text-indigo-600 w-10 h-10 mr-1 mt-1"}
                 />
                  <TapCard 
                     text={"Diamond"}
@@ -68,12 +68,12 @@ const Tasks = () => {
                 />
                  <TapCard 
                     text={"Master"}
-                    coin={"5000"}
+                    coin={"100000"}
                     className={"text-[#cd7f32] w-10 h-10 mr-1 mt-1"}
                 />
                  <TapCard 
                     text={"Grandmaster"}
-                    coin={"5000"}
+                    coin={"1000000"}
                     className={"text-[#cd7f32] w-10 h-10 mr-1 mt-1"}
                 />
             </div>
