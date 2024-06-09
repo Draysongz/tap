@@ -12,8 +12,11 @@ import NextLink from 'next/link';
 
 const Dash = () => {
   const [isScaled, setIsScaled] = useState(false);
+  const [count, setCount] = useState(0);
+
 
   const handleImageClick = () => {
+    setCount(count + 1);
     setIsScaled(!isScaled);
   };
 
@@ -29,7 +32,7 @@ const Dash = () => {
     <Flex minH="100vh" bgColor="#10171d" direction="column" alignItems="center" justifyContent="center">
       {/* scorecount */}
       <Flex direction="column" alignItems="center" zIndex={1} mb={8}>
-        <Text color="white" fontSize="4xl" textAlign="center">123 434</Text>
+        <Text color="white" fontSize="4xl" textAlign="center">{count}</Text>
         <HStack>
           <Icon as={GiTrophyCup} boxSize={3} color="#FFFF6C" />
           <Text color="white">Legendary</Text>
