@@ -28,15 +28,15 @@ const Tasks = () => {
                 <p className="font-bold text-4xl flex justify-center text-white pb-4">
                     <Image 
                         src={"/sharp.gif"}
-                        width={80}
-                        height={80}
+                        width={60}
+                        height={60}
                     />
                     123 434
                 </p>
-                <p className="flex justify-center text-lg text-white">
-                <GiTrophyCup className="text-[#cd7f32] w-5 h-5 mr-1 mt-1"/>
+                <p className="flex justify-center text-md text-white">
+                <GiTrophyCup className="text-[#cd7f32] w-4 h-4 mr-1 mt-1"/>
                 Bronze
-                <MdKeyboardArrowRight className="ml-1 w-6 h-6 mt-1"/>
+                <MdKeyboardArrowRight className="w-5 h-5 mt-1"/>
                 </p>
             </div>
             <hr className="border-t border-gray-700 my-4" />
