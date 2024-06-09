@@ -31,7 +31,7 @@ const Stats = () => {
                 <h1 className="text-gray-500">Total Share Balance</h1>
                 <p className="text-4xl flex justify-center font-bold text-white">
                   <Image 
-                    src={"/coin.png"}
+                    src={"/sharp.gif"}
                     width={50}
                     height={50}
                   />

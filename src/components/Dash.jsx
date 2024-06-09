@@ -41,7 +41,7 @@ const Dash = () => {
       <Flex alignItems="center" justifyContent="center" w="100%" zIndex={0}>
         <Box
           as="img"
-          src="/coin.png"
+          src="/sharp.gif"
           maxW="350px"
           transition="transform 0.1s ease-in-out"
           transform={isScaled ? 'scale(1.1)' : 'scale(1.0)'}

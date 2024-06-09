@@ -4,7 +4,7 @@ import { Card, CardBody, Flex, Text, Box, HStack, Icon , Tooltip,
     useBreakpointValue,
 } from '@chakra-ui/react';
 import Image from "next/image";
-import { CiTrophy } from "react-icons/ci";
+import { GiTrophyCup } from "react-icons/gi";
 import { MdKeyboardArrowRight, MdSpaceDashboard, MdGroups } from "react-icons/md";
 import { IoMdStats } from "react-icons/io";
 import { SiGoogletasks } from "react-icons/si";
@@ -27,14 +27,14 @@ const Tasks = () => {
             <div>
                 <p className="font-bold text-4xl flex justify-center text-white pb-4">
                     <Image 
-                        src={"/coin.png"}
-                        width={50}
-                        height={50}
+                        src={"/sharp.gif"}
+                        width={80}
+                        height={80}
                     />
                     123 434
                 </p>
-                <p className="flex justify-center text-lg text-gray-400 font-semibold">
-                <CiTrophy className="text-[#cd7f32] w-5 h-5 mr-1 mt-1"/>
+                <p className="flex justify-center text-lg text-white">
+                <GiTrophyCup className="text-[#cd7f32] w-5 h-5 mr-1 mt-1"/>
                 Bronze
                 <MdKeyboardArrowRight className="ml-1 w-6 h-6 mt-1"/>
                 </p>
