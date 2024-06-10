@@ -41,10 +41,10 @@ const Referral = () => {
             <div className={`pt-12 ${poppins.className}`}>
               <FaHandshake className="w-20 h-20 mx-auto text-yellow-500" />
               <p className="text-center pt-2 font-semibold text-2xl pb-6">0 Friends</p>
-              <p className="w-11/12 border border-[#000000] mx-auto px-2 py-1 bg-gray-900 text-center text-lg rounded-md font-semibold mb-3">+0 UmaxCoin</p>
+              <p className="w-11/12 border border-[#000000] mx-auto px-2 py-1 bg-[#2a2522] text-center text-lg rounded-md font-semibold mb-3">+0 UmaxCoin</p>
               <div>
                 <p className="pl-4 text-lg text-yellow-600 font-semibold pb-2">Invite friends to get bonuses</p>
-                <div className="rounded-md w-11/12 border border-[#000000] bg-gray-900 mx-auto px-2 py-3">
+                <div className="rounded-md w-11/12 border border-[#000000] bg-[#2a2522] mx-auto px-2 py-3">
                 <div className="flex justify-around pb-2">
                   <div>
                     <Image 
