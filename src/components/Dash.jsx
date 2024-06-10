@@ -50,7 +50,7 @@ const Dash = () => {
   return (
     <>
     <div className="bg-[#000000] h-screen">
-      <div className={`text-center text-white ${poppins.className} pt-4 overflow-hidden`}>
+      <div className={`text-center text-white ${poppins.className} pt-4 fixed`}>
         <button className="border w-11/12 py-1 border-[#000000] bg-[#1f1f1f] mx-auto rounded-md text-lg flex justify-center mb-6">Join clan <MdKeyboardArrowRight className="w-5 h-5 mt-1" /></button>
         <p className="text-6xl font-semibold pb-3">{count}</p>
         <p className="text-md font-semibold"><span className="text-yellow-500">.</span> Level 1 <span className="text-yellow-500">.</span></p>
