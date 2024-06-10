@@ -64,7 +64,7 @@ const Referral = () => {
                 </div>
                 <p className="text-white font-semibold text-sm text-center">FOR YOU AND A FRIEND</p>
                 </div>
-                <button className="text-sm font-semibold mt-4 ml-3 bg-gradient-to-r from-yellow-400 to-yellow-600 w-11/12 text-center py-2 rounded-full">Invite a friend</button>
+                <button className="text-sm font-semibold mt-4 ml-3 bg-gradient-to-r from-yellow-400 to-yellow-600 w-11/12 text-center py-3 rounded-full">Invite a friend</button>
               </div>
             </div>
             <Flex
