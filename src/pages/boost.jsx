@@ -34,7 +34,7 @@ const Boost = () => {
      ];
 
     return(
-        <div className="pt-10 bg-[#000000] h-screen pb-12">
+        <div className="pt-10 bg-[#000000] h-full pb-12">
             <div className={`${poppins.className} pt-6 text-white`}>
               <div className="one text-center pb-4">
                 <p className="text-3xl font-semibold text-white pb-1">1 898</p>

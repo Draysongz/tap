@@ -55,10 +55,11 @@ const Dash = () => {
         <p className="text-3xl font-semibold pb-3">{count}</p>
         <p className="text-sm font-semibold"><span className="text-yellow-500">.</span> Level 1 <span className="text-yellow-500">.</span></p>
         <div className={`pt-12 transition-transform transform ${isScaled && 'scale-75'} mb-16`} onClick={handleImageClick}>
-          <Image 
-            src={"/x3.png"}
+          <img 
+            src={"/sharp.gif"}
             width={1000}
             height={1000}
+            alt={"Coin"}
           />
         </div>
         <ProgressBar progress={100} />
