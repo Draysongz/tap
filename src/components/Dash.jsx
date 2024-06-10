@@ -29,9 +29,9 @@ const Dash = () => {
   ];
 
   return (
-    <Flex minH="100vh" bgColor="#10171d" direction="column" alignItems="center" justifyContent="center">
+    <Flex minH="100vh" bgColor="#10171d" direction="column" alignItems="center" justifyContent="center" className='border border-white'>
       {/* scorecount */}
-      <Flex direction="column" alignItems="center" zIndex={1} mb={8}>
+      <Flex direction="column" alignItems="center" zIndex={0} mb={8}>
         <Text color="white" fontSize="4xl" textAlign="center">{count}</Text>
         <HStack>
           <Icon as={GiTrophyCup} boxSize={3} color="#FFFF6C" />
@@ -45,7 +45,7 @@ const Dash = () => {
         <Box
           as="img"
           src="/coin.png"
-          maxW="350px"
+          maxW="570px"
           transition="transform 0.1s ease-in-out"
           transform={isScaled ? 'scale(1.1)' : 'scale(1.0)'}
           onClick={handleImageClick}

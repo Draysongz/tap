@@ -9,8 +9,19 @@ import { IoMdStats } from "react-icons/io";
 import { SiGoogletasks } from "react-icons/si";
 import { FaFireAlt } from "react-icons/fa";
 import Head from "next/head";
+import Image from "next/image";
+import { FaHandshake } from "react-icons/fa";
 import NextLink from 'next/link';
 import Link from "next/link";
+import { FaRegStar } from "react-icons/fa";
+import { Poppins } from 'next/font/google';
+
+const poppins = Poppins({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-poppins',
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900']
+});
 
 const Referral = () => {
     const navData = [
@@ -24,23 +35,37 @@ const Referral = () => {
     return(
         <>
         <Head>
-            <title>Referrals - TapSwap</title>
+            <title>Invite - Umax Network</title>
         </Head>
-        <div className="bg-[#10171d] text-lg text-white h-screen">
-            <div>
-                <h1 className="text-center pt-8 text-2xl">0 Referrals</h1>
-                <p className="text-center text-green-600 text-sm pb-2">+0</p>
-                <div className="shadow-lg w-10/12 mx-auto border border-[#10171d] px-3 py-2 bg-gray-900 rounded-md mb-8">
-                    <div className="flex justify-between">
-                        <h1 className="text-md">My invite link:</h1>
-                        <button className="border border-[#10171d] px-4 text-sm font-bold  py-2 bg-indigo-950 text-white rounded-full">copy</button>
-                    </div>
-                    <Link href="/" className="text-sm">https://t.me/tapswap_bot</Link>
+        <div className="bg-[#000000] text-lg text-white h-screen">
+            <div className={`pt-12 ${poppins.className}`}>
+              <FaHandshake className="w-20 h-20 mx-auto text-yellow-500" />
+              <p className="text-center pt-2 font-semibold text-2xl pb-6">0 Friends</p>
+              <p className="w-11/12 border border-[#000000] mx-auto px-2 py-1 bg-gray-900 text-center text-lg rounded-md font-semibold mb-3">+0 UmaxCoin</p>
+              <div>
+                <p className="pl-4 text-lg text-yellow-600 font-semibold pb-2">Invite friends to get bonuses</p>
+                <div className="rounded-md w-11/12 border border-[#000000] bg-gray-900 mx-auto px-2 py-3">
+                <div className="flex justify-around pb-2">
+                  <div>
+                    <Image 
+                      src={"/top.png"}
+                      width={80}
+                      height={80}
+                      className="mx-auto"
+                    />
+                    <p className="text-sm font-semibold">Telegram User</p>
+                    <p className="text-yellow-600 text-center font-semibold">1500</p>
+                  </div>
+                  <div>
+                    <FaRegStar className="mx-auto w-[65px] h-[65px] text-purple-800" />
+                      <p className="text-sm font-semibold">Premium User</p>
+                      <p className="text-yellow-600 text-center font-semibold">30000</p>
+                  </div>
                 </div>
-                <div className="referrals">
-                    <h1 className="ml-4">My Referrals:</h1>
-                    <div className="text-center pt-12">You have no referrals 😭</div>
+                <p className="text-white font-semibold text-sm text-center">FOR YOU AND A FRIEND</p>
                 </div>
+                <button className="text-sm font-semibold mt-4 ml-3 bg-gradient-to-r from-yellow-400 to-yellow-600 w-11/12 text-center py-2 rounded-full">Invite a friend</button>
+              </div>
             </div>
             <Flex
           position="fixed"
