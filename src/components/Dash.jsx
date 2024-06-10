@@ -49,16 +49,16 @@ const Dash = () => {
 
   return (
     <>
-    <div className="bg-[#000000] h-screen">
+    <div className="bg-[#000000] h-screen overflow-hidden">
       <div className={`text-center text-white ${poppins.className} pt-4`}>
         <button className="border w-11/12 py-1 border-[#000000] bg-[#1f1f1f] mx-auto rounded-md text-lg flex justify-center mb-6">Join clan <MdKeyboardArrowRight className="w-5 h-5 mt-1" /></button>
-        <p className="text-3xl font-semibold pb-3">{count}</p>
-        <p className="text-sm font-semibold"><span className="text-yellow-500">.</span> Level 1 <span className="text-yellow-500">.</span></p>
+        <p className="text-6xl font-semibold pb-3">{count}</p>
+        <p className="text-md font-semibold"><span className="text-yellow-500">.</span> Level 1 <span className="text-yellow-500">.</span></p>
         <div className={`pt-12 transition-transform transform ${isScaled && 'scale-75'} mb-16`} onClick={handleImageClick}>
           <img 
-            src={"/sharp.gif"}
-            width={1000}
-            height={1000}
+            src={"/sharp.png"}
+            width={3000}
+            height={3000}
             alt={"Coin"}
           />
         </div>
