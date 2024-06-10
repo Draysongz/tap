@@ -2,22 +2,41 @@ import { Card, CardBody, Flex, Text, Box, HStack, Icon , Tooltip,
     useColorModeValue,
     useBreakpointValue,
 } from '@chakra-ui/react';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { GiTrophyCup } from "react-icons/gi";
 import { MdKeyboardArrowRight, MdSpaceDashboard, MdGroups } from "react-icons/md";
 import { IoMdStats } from "react-icons/io";
 import { SiGoogletasks } from "react-icons/si";
 import { FaFireAlt } from "react-icons/fa";
 import NextLink from 'next/link';
+import Image from "next/image"
+import { Poppins } from 'next/font/google';
+import ProgressBar from './Progress';
+
+const poppins = Poppins({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-poppins',
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900']
+});
 
 const Dash = () => {
   const [isScaled, setIsScaled] = useState(false);
   const [count, setCount] = useState(0);
+  const [progress, setProgress] = useState(75);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setProgress(50), 1000);
+    return () => clearTimeout(timer);
+  }, []);
 
 
   const handleImageClick = () => {
     setCount(count + 1);
-    setIsScaled(!isScaled);
+    setIsScaled(true);
+    setTimeout(() => {
+      setIsScaled(false);
+    }, 500);
   };
 
   const navData = [
@@ -29,31 +48,21 @@ const Dash = () => {
   ];
 
   return (
-    <Flex minH="100vh" bgColor="#10171d" direction="column" alignItems="center" justifyContent="center" className='border border-white'>
-      {/* scorecount */}
-      <Flex direction="column" alignItems="center" zIndex={0} mb={8}>
-        <Text color="white" fontSize="4xl" textAlign="center">{count}</Text>
-        <HStack>
-          <Icon as={GiTrophyCup} boxSize={3} color="#FFFF6C" />
-          <Text color="white">Legendary</Text>
-          <Icon as={MdKeyboardArrowRight} boxSize={4} color="white" />
-        </HStack>
-      </Flex>
-
-      {/* Floating image */}
-      <Flex alignItems="center" justifyContent="center" w="100%" zIndex={0}>
-        <Box
-          as="img"
-          src="/coin.png"
-          maxW="570px"
-          transition="transform 0.1s ease-in-out"
-          transform={isScaled ? 'scale(1.1)' : 'scale(1.0)'}
-          onClick={handleImageClick}
-          cursor="pointer"
-        />
-      </Flex>
-
-
+    <>
+    <div className="bg-[#000000] h-screen">
+      <div className={`text-center text-white ${poppins.className} pt-4`}>
+        <button className="border w-11/12 py-1 border-[#000000] bg-[#1f1f1f] mx-auto rounded-md text-lg flex justify-center mb-6">Join clan <MdKeyboardArrowRight className="w-5 h-5 mt-1" /></button>
+        <p className="text-3xl font-semibold pb-3">{count}</p>
+        <p className="text-sm font-semibold"><span className="text-yellow-500">.</span> Level 1 <span className="text-yellow-500">.</span></p>
+        <div className={`pt-12 transition-transform transform ${isScaled && 'scale-75'} mb-16`} onClick={handleImageClick}>
+          <Image 
+            src={"/x3.png"}
+            width={1000}
+            height={1000}
+          />
+        </div>
+        <ProgressBar progress={100} />
+      </div>
       <Flex
           position="fixed"
           bottom={0}
@@ -90,7 +99,8 @@ const Dash = () => {
           
           
         </Flex>
-    </Flex>
+        </div>
+    </>
   );
 };
 

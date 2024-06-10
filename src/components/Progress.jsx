@@ -1,16 +1,16 @@
 import React from 'react';
 
-const Progress = ({ value, maxValue }) => {
-  const percentage = (value / maxValue) * 100;
-
+const ProgressBar = ({ progress }) => {
   return (
-    <div className="bg-gray-800 h-4 w-full rounded-full">
+    <div
+      className={`h-5 w-10/12 mx-auto bg-gray-100 rounded-full overflow-hidden relative`}
+    >
       <div
-        className="bg-blue-500 h-full rounded-full"
-        style={{ width: `${percentage}%` }}
-      ></div>
+        style={{ width: `${progress}%` }}
+        className={`h-full bg-yellow-400 rounded-full`}
+      ><p className='text-sm text-center font-semibold'>100%</p></div>
     </div>
   );
 };
 
-export default Progress;
+export default ProgressBar;
