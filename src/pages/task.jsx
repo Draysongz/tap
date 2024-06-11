@@ -44,7 +44,7 @@ const Tasks = () => {
               <div>
                 <FaSackDollar className="text-yellow-500 w-20 h-20 mb-3 mx-auto" />
               <p className="text-center text-xl font-semibold pb-4">Earn more UmaxCoin</p>
-              <div className="border w-11/12 px-2 py-2 mb-4 mt-2 border-[#000000] rounded-md bg-[#2a2522] mx-auto">
+              <div className="border w-11/12 px-2 py-2 mb-4 mt-2 border-[#000000] rounded-md bg-[#1f2221] mx-auto">
                   <div className="one flex justify-between pb-2">
                     <FaHandshake className="text-yellow-500 w-12 h-12 border border-[#2a2522] bg-[#271608] px-2 rounded-full" />
                     <div>
@@ -57,9 +57,9 @@ const Tasks = () => {
               </div>
               <div>
                 <h1 className="pl-2 text-lg font-semibold">Specials</h1>
-                <div className="border w-11/12 px-2 pt-6 pb-4 mb-4 mt-2 border-[#000000] rounded-md bg-[#2a2522] mx-auto">
+                <div className="border w-11/12 px-2 pt-6 pb-4 mb-4 mt-2 border-[#000000] rounded-md bg-[#1f2221] mx-auto">
                   <div className="one flex justify-between pb-2">
-                    <FaInstagram className="text-pink-700 w-12 h-12 border border-[#2a2522] bg-white px-2 rounded-full" />
+                    <FaInstagram className="text-pink-700 w-12 h-12 px-2" />
                     <div>
                       <p className="text-gray-300">Follow on Instagram</p>
                       <p className="text-sm font-semibold text-center">+10000</p>
@@ -67,7 +67,7 @@ const Tasks = () => {
                     <MdKeyboardArrowRight className="w-6 h-6 mt-2"/>
                   </div>
                   <div className="two flex justify-between pb-2">
-                  <FaXTwitter className="text-black w-12 h-12 border border-[#2a2522] bg-white px-2 rounded-full" />
+                  <FaXTwitter className="text-white w-12 h-12 px-2" />
                     <div>
                       <p className="text-gray-300">Follow on X</p>
                       <p className="text-sm font-semibold text-center">+10000</p>
@@ -86,7 +86,7 @@ const Tasks = () => {
               </div>
               <div>
                 <h1 className="text-lg pl-2 font-semibold">Bonuses</h1>
-                <div className="border w-11/12 px-2 pt-6 pb-4 mb-4 mt-2 border-[#000000] rounded-md bg-[#2a2522] mx-auto">
+                <div className="border w-11/12 px-2 pt-6 pb-4 mb-4 mt-2 border-[#000000] rounded-md bg-[#1f2221] mx-auto">
                   <div className="one flex justify-between pb-2">
                     <FaUserFriends className="w-12 h-12 border border-[#2a2522] text-black bg-white px-2 rounded-full" />
                     <div>
@@ -118,9 +118,9 @@ const Tasks = () => {
               <div className="tasks pb-8">
                 <div className="tasks-wrapper">
                   <h1 className="text-xl font-semibold pl-2">Tasks</h1>
-                  <div className="border w-11/12 px-2 pt-6 pb-4 mb-4 mt-2 border-[#000000] rounded-md bg-[#2a2522] mx-auto">
+                  <div className="border w-11/12 px-2 pt-6 pb-4 mb-4 mt-2 border-[#000000] rounded-md bg-[#1f2221] mx-auto">
                   <div className="one flex justify-between pb-2">
-                    <FaYoutube className=" text-red-500 w-12 h-12 border border-[#2a2522] bg-white px-2 rounded-full" />
+                    <FaYoutube className=" text-red-500 w-14 h-14 px-2" />
                     <div>
                       <p className="text-gray-300">Subscrbe to our Youtube</p>
                       <p className="text-sm font-semibold text-center">+10000</p>
@@ -128,7 +128,7 @@ const Tasks = () => {
                     <MdKeyboardArrowRight className="w-6 h-6 mt-2"/>
                   </div>
                   <div className="two flex justify-between pb-2">
-                  <FaYoutube className="text-red-500 w-12 h-12 border border-[#2a2522] bg-white px-2 rounded-full" />
+                  <FaYoutube className="text-red-500 w-14 h-14 px-2" />
                     <div>
                       <p className="text-gray-300">Watch Youtube Video</p>
                       <p className="text-sm font-semibold text-center">+10000</p>
@@ -136,7 +136,7 @@ const Tasks = () => {
                     <MdKeyboardArrowRight className="w-7 h-7 mt-2 pb-2"/>
                   </div>
                   <div className="three flex justify-between">
-                  <FaXTwitter className="text-black w-12 h-12 border border-[#2a2522] bg-white px-2 rounded-full" />
+                  <FaXTwitter className="text-white w-14 h-14 px-2" />
                     <div>
                       <p className="text-gray-300">Retweet Twitter Posts</p>
                       <p className="text-sm font-semibold text-center">+50000</p>

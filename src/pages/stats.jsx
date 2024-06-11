@@ -24,7 +24,7 @@ const Stats = () => {
     return(
       <>
       <Head>
-        <title>Stats - TapSwap</title>
+        <title>Stats - Umax Network</title>
       </Head>
         <div className="bg-[#10171d] h-screen">
             <div className="balance text-center pt-8 pb-6">
@@ -35,12 +35,12 @@ const Stats = () => {
                     width={50}
                     height={50}
                   />
-                  137.869 T</p>
+                  137.869 U</p>
             </div>
             <hr className="border-t border-gray-700 my-4" />
             <div className="text-center">
-                <h1 className="text-gray-500 font-semibold">Total Touches:</h1>
-                <p className="text-white text-lg font-bold pb-4">1 592 062 438 977</p>
+                <h1 className="text-gray-500 font-semibold">Total Taps:</h1>
+                <p className="text-white text-lg font-bold pb-4">1 897</p>
                 <h1 className="text-gray-500 font-semibold">Total Players:</h1>
                 <p className="text-white text-lg font-bold pb-4">44 594 161</p>
                 <h1 className="text-gray-500 font-semibold">Daily Users:</h1>
