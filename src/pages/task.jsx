@@ -18,6 +18,7 @@ import { FaCircleDot } from "react-icons/fa6";
 import { FaSackDollar } from "react-icons/fa6";
 import { FaTelegramPlane } from "react-icons/fa";
 import { FaUserFriends } from "react-icons/fa";
+import { FaCalendarCheck } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { Poppins } from 'next/font/google';
@@ -49,7 +50,7 @@ const Tasks = () => {
                     <FaHandshake className="text-yellow-500 w-12 h-12 border border-[#2a2522] bg-[#271608] px-2 rounded-full" />
                     <div>
                       <p className="text-center">Invite Bonus</p>
-                      <p className="text-sm font-semibold text-center">Get up to 12000 token for you<br/> and your friend</p>
+                      <p className="text-sm font-semibold text-center">Get up to 12000 Token for you<br/> and your friend</p>
                     </div>
                     <MdKeyboardArrowRight className="w-7 h-7 mt-2 pb-2"/>
                 </div>
@@ -114,6 +115,19 @@ const Tasks = () => {
                 </div>
               </div>
               <div>
+              </div>
+              <div className="daily-tasks pb-4">
+                <h1 className="pl-2 font-semibold text-xl pb-2">Daily tasks</h1>
+                <div className="border w-11/12 px-2 py-1 border-[#000000] rounded-md bg-[#1f2221] mx-auto">
+                  <div className="one flex justify-between">
+                    <FaCalendarCheck className=" text-blue-800 w-12 h-12 px-2" />
+                    <div>
+                      <p className="text-gray-300">Daily reward</p>
+                      <p className="text-sm font-semibold text-center">+100,000</p>
+                    </div>
+                    <MdKeyboardArrowRight className="w-6 h-6 mt-2"/>
+                  </div>
+                </div>
               </div>
               <div className="tasks pb-8">
                 <div className="tasks-wrapper">
