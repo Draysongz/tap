@@ -104,7 +104,7 @@ const Tasks = () => {
                     <MdKeyboardArrowRight className="w-7 h-7 mt-2 pb-2"/>
                   </div>
                   <div className="three flex justify-between">
-                  <FaCircleDot className="text-yellow-600 w-12 h-12 border border-[#2a2522] bg-black px-2 rounded-full" />
+                  <FaCircleDot className="text-black w-12 h-12 border border-[#2a2522] bg-white px-2 rounded-full" />
                     <div>
                       <p className="text-gray-300">Invite 100 friends</p>
                       <p className="text-sm font-semibold text-center">+30000</p>
