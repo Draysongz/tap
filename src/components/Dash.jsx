@@ -44,7 +44,7 @@ const Dash = () => {
     {icon : SiGoogletasks, title: 'Tasks', link: '/task'},
     { icon: MdSpaceDashboard, title: "Tap", link: "/" },
     {icon: FaFireAlt, title:'Boost', link: '/boost'},
-    {icon: IoMdStats, title: 'Check' , link: '/stats'}
+    {icon: IoMdStats, title: 'Stats' , link: '/stats'}
   ];
 
   return (
