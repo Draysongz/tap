@@ -15,8 +15,11 @@ import NextLink from 'next/link';
 import { FaHandshake } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaCircleDot } from "react-icons/fa6";
-import TapCard from "@/components/TapCard";
 import { FaSackDollar } from "react-icons/fa6";
+import { FaTelegramPlane } from "react-icons/fa";
+import { FaUserFriends } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
 import { Poppins } from 'next/font/google';
 
 const poppins = Poppins({
@@ -46,7 +49,7 @@ const Tasks = () => {
                     <FaHandshake className="text-yellow-500 w-12 h-12 border border-[#2a2522] bg-[#271608] px-2 rounded-full" />
                     <div>
                       <p>Invite Bonus</p>
-                      <p className="text-sm font-semibold text-center">up to 30000 for friend</p>
+                      <p className="text-sm font-semibold text-center">up to 12000 for friend</p>
                     </div>
                     <MdKeyboardArrowRight className="w-7 h-7 mt-2 pb-2"/>
                 </div>
@@ -56,9 +59,9 @@ const Tasks = () => {
                 <h1 className="pl-2 text-lg font-semibold">Specials</h1>
                 <div className="border w-11/12 px-2 pt-6 pb-4 mb-4 mt-2 border-[#000000] rounded-md bg-[#2a2522] mx-auto">
                   <div className="one flex justify-between pb-2">
-                    <MdEnergySavingsLeaf className="w-12 h-12 border border-[#2a2522] bg-[#271608] px-2 rounded-full" />
+                    <FaInstagram className="text-pink-700 w-12 h-12 border border-[#2a2522] bg-white px-2 rounded-full" />
                     <div>
-                      <p className="text-gray-300">Deposit on TON</p>
+                      <p className="text-gray-300">Follow on Instagram</p>
                       <p className="text-sm font-semibold text-center">+70000</p>
                     </div>
                     <MdKeyboardArrowRight className="w-6 h-6 mt-2"/>
@@ -66,15 +69,15 @@ const Tasks = () => {
                   <div className="two flex justify-between pb-2">
                   <FaXTwitter className="text-black w-12 h-12 border border-[#2a2522] bg-white px-2 rounded-full" />
                     <div>
-                      <p className="text-gray-300">Follow X</p>
+                      <p className="text-gray-300">Follow on X</p>
                       <p className="text-sm font-semibold text-center">+10000</p>
                     </div>
                     <MdKeyboardArrowRight className="w-7 h-7 mt-2 pb-2"/>
                   </div>
                   <div className="three flex justify-between">
-                  <FaCircleDot className="text-yellow-600 w-12 h-12 border border-[#2a2522] bg-black px-2 rounded-full" />
+                  <FaTelegramPlane className="w-12 h-12 border border-[#2a2522] px-2 rounded-full" />
                     <div>
-                      <p className="text-gray-300">Follow Community</p>
+                      <p className="text-gray-300">Follow Telegram Community</p>
                       <p className="text-sm font-semibold text-center">+50000</p>
                     </div>
                     <MdKeyboardArrowRight className="w-6 h-6 mt-2"/>
@@ -85,17 +88,17 @@ const Tasks = () => {
                 <h1 className="text-lg pl-2 font-semibold">Bonuses</h1>
                 <div className="border w-11/12 px-2 pt-6 pb-4 mb-4 mt-2 border-[#000000] rounded-md bg-[#2a2522] mx-auto">
                   <div className="one flex justify-between pb-2">
-                    <MdEnergySavingsLeaf className="w-12 h-12 border border-[#2a2522] bg-[#271608] px-2 rounded-full" />
+                    <FaUserFriends className="w-12 h-12 border border-[#2a2522] text-black bg-white px-2 rounded-full" />
                     <div>
-                      <p className="text-gray-300">Invite 5 friends</p>
-                      <p className="text-sm font-semibold text-center">+70000</p>
+                      <p className="text-gray-300">Follow on Facebook</p>
+                      <p className="text-sm font-semibold text-center">+10000</p>
                     </div>
                     <MdKeyboardArrowRight className="w-6 h-6 mt-2"/>
                   </div>
                   <div className="two flex justify-between pb-2">
-                  <FaXTwitter className="text-black w-12 h-12 border border-[#2a2522] bg-white px-2 rounded-full" />
+                  <FaTelegramPlane className="text-black w-12 h-12 border border-[#2a2522] bg-white px-2 rounded-full" />
                     <div>
-                      <p className="text-gray-300">Invite 10 friends</p>
+                      <p className="text-gray-300">Join Telegram Group</p>
                       <p className="text-sm font-semibold text-center">+10000</p>
                     </div>
                     <MdKeyboardArrowRight className="w-7 h-7 mt-2 pb-2"/>
@@ -112,6 +115,37 @@ const Tasks = () => {
               </div>
               <div>
               </div>
+              <div className="tasks pb-8">
+                <div className="tasks-wrapper">
+                  <h1 className="text-xl font-semibold pl-2">Tasks</h1>
+                  <div className="border w-11/12 px-2 pt-6 pb-4 mb-4 mt-2 border-[#000000] rounded-md bg-[#2a2522] mx-auto">
+                  <div className="one flex justify-between pb-2">
+                    <FaYoutube className=" text-red-500 w-12 h-12 border border-[#2a2522] bg-white px-2 rounded-full" />
+                    <div>
+                      <p className="text-gray-300">Subscrbe to our Youtube</p>
+                      <p className="text-sm font-semibold text-center">+10000</p>
+                    </div>
+                    <MdKeyboardArrowRight className="w-6 h-6 mt-2"/>
+                  </div>
+                  <div className="two flex justify-between pb-2">
+                  <FaYoutube className="text-red-500 w-12 h-12 border border-[#2a2522] bg-white px-2 rounded-full" />
+                    <div>
+                      <p className="text-gray-300">Watch Youtube Video</p>
+                      <p className="text-sm font-semibold text-center">+10000</p>
+                    </div>
+                    <MdKeyboardArrowRight className="w-7 h-7 mt-2 pb-2"/>
+                  </div>
+                  <div className="three flex justify-between">
+                  <FaXTwitter className="text-black w-12 h-12 border border-[#2a2522] bg-white px-2 rounded-full" />
+                    <div>
+                      <p className="text-gray-300">Retweet Twitter Posts</p>
+                      <p className="text-sm font-semibold text-center">+50000</p>
+                    </div>
+                    <MdKeyboardArrowRight className="w-6 h-6 mt-2"/>
+                  </div>
+                </div>
+                </div>
+              </div>
             </div>
             <Flex
           position="fixed"
@@ -124,7 +158,7 @@ const Tasks = () => {
           justifyContent="space-around"
           zIndex={1}
           display={useBreakpointValue({base: 'flex', md: 'flex', lg: 'none'})}
-          bgColor={'#251d33'}
+          bgColor={'#1f2221'}
         >
           {navData.map((item, index) => (
             <Tooltip

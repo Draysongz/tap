@@ -45,23 +45,19 @@ const Referral = () => {
               <div>
                 <p className="pl-4 text-lg text-yellow-600 font-semibold pb-2">Invite friends to get bonuses</p>
                 <div className="rounded-md w-11/12 border border-[#000000] bg-[#2a2522] mx-auto px-2 py-3">
-                <div className="flex justify-around pb-2">
-                  <div>
+                <div className="flex justify-center">
+                  <div className="">
                     <Image 
                       src={"/top.png"}
                       width={80}
                       height={80}
                       className="mx-auto"
+                      alt="Top Image"
                     />
                     <p className="text-sm font-semibold">Telegram User</p>
-                    <p className="text-yellow-600 text-center font-semibold">1500</p>
+                    <p className="text-yellow-600 text-center font-semibold">12000</p>
                   </div>
-                  <div>
-                    <FaRegStar className="mx-auto w-[65px] h-[65px] text-purple-800" />
-                      <p className="text-sm font-semibold">Premium User</p>
-                      <p className="text-yellow-600 text-center font-semibold">30000</p>
                   </div>
-                </div>
                 <p className="text-white font-semibold text-sm text-center">FOR YOU AND A FRIEND</p>
                 </div>
                 <button className="text-sm font-semibold mt-4 ml-3 bg-gradient-to-r from-yellow-400 to-yellow-600 w-11/12 text-center py-3 rounded-full">Invite a friend</button>
@@ -78,7 +74,7 @@ const Referral = () => {
           justifyContent="space-around"
           zIndex={1}
           display={useBreakpointValue({base: 'flex', md: 'flex', lg: 'none'})}
-          bgColor={'#251d33'}
+          bgColor={'#1f2221'}
         >
           {navData.map((item, index) => (
             <Tooltip

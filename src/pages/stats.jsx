@@ -59,7 +59,7 @@ const Stats = () => {
           justifyContent="space-around"
           zIndex={1}
           display={useBreakpointValue({base: 'flex', md: 'flex', lg: 'none'})}
-          bgColor={'#251d33'}
+          bgColor={'#1f2221'}
         >
           {navData.map((item, index) => (
             <Tooltip

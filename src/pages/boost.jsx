@@ -13,6 +13,8 @@ import Link from "next/link";
 import NextLink from 'next/link';
 import BoostCard from "@/components/BoostCard";
 import { IoDiamondOutline } from "react-icons/io5";
+import { SiOpenmined } from "react-icons/si";
+import { SiFastapi } from "react-icons/si";
 import { MdOutlineLocalDrink } from "react-icons/md";
 import { MdEnergySavingsLeaf } from "react-icons/md";
 import { Poppins } from 'next/font/google';
@@ -34,7 +36,7 @@ const Boost = () => {
      ];
 
     return(
-        <div className="pt-10 bg-[#000000] h-full pb-12">
+        <div className="pt-10 bg-[#000000] h-screen pb-12">
             <div className={`${poppins.className} pt-6 text-white`}>
               <div className="one text-center pb-4">
                 <p className="text-3xl font-semibold text-white pb-1">1 898</p>
@@ -44,7 +46,7 @@ const Boost = () => {
                 <p className="pl-2 text-xl font-semibold">Boosters</p>
                   <div className="border w-11/12 px-2 pt-6 pb-4 mb-4 mt-2 border-[#000000] rounded-md bg-[#2a2522] mx-auto">
                   <div className="one flex justify-between pb-2">
-                    <MdEnergySavingsLeaf className="w-12 h-12 border border-[#2a2522] bg-[#271608] px-2 rounded-full" />
+                    <SiFastapi className="w-12 h-12 border border-[#2a2522] bg-[#271608] px-2 rounded-full" />
                     <div>
                       <p>Multitap Feature</p>
                       <p className="text-sm font-semibold text-center">2000 . 1M</p>
@@ -60,9 +62,9 @@ const Boost = () => {
                     <MdKeyboardArrowRight className="w-7 h-7 mt-2 pb-2"/>
                   </div>
                   <div className="three flex justify-between">
-                  <MdEnergySavingsLeaf className="w-12 h-12 border border-[#2a2522] bg-[#271608] px-2 rounded-full" />
+                  <SiOpenmined className="w-12 h-12 border border-[#2a2522] bg-[#271608] px-2 rounded-full" />
                     <div>
-                      <p>Mining Feature</p>
+                      <p>Auto Miner</p>
                       <p className="text-sm font-semibold text-center">2000 . 1M</p>
                     </div>
                     <MdKeyboardArrowRight className="w-6 h-6 mt-2"/>
@@ -87,7 +89,7 @@ const Boost = () => {
           justifyContent="space-around"
           zIndex={1}
           display={useBreakpointValue({base: 'flex', md: 'flex', lg: 'none'})}
-          bgColor={'#251d33'}
+          bgColor={'#1f2221'}
         >
           {navData.map((item, index) => (
             <Tooltip
