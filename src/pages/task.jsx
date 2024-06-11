@@ -120,7 +120,7 @@ const Tasks = () => {
                 <h1 className="pl-2 font-semibold text-xl pb-2">Daily tasks</h1>
                 <div className="border w-11/12 px-2 py-1 border-[#000000] rounded-md bg-[#1f2221] mx-auto">
                   <div className="one flex justify-between">
-                    <FaCalendarCheck className=" text-blue-800 w-12 h-12 px-2" />
+                    <FaCalendarCheck className=" text-white w-12 h-12 px-2" />
                     <div>
                       <p className="text-gray-300">Daily reward</p>
                       <p className="text-sm font-semibold text-center">+100,000</p>
