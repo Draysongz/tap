@@ -71,7 +71,7 @@ const Boost = () => {
                   </div>
                 </div>
               </div>
-              <div className="three border w-11/12 rounded-md border-[#000000] bg-[#2a2522] mx-auto px-2 pt-6 pb-4">
+              <div className="three border w-11/12 rounded-md border-[#000000] bg-[#2a2522] mx-auto px-2 pt-6 pb-4 mb-16">
                 <IoDiamondOutline className="text-[#0089d2] mx-auto w-[65px] h-[65px] mb-2"/>
                 <h2 className="text-center text-yellow-600 font-semibold">Umaxcoin x2</h2>
                 <p className="text-sm">Double your coins and level up even faster!</p>

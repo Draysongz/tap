@@ -62,7 +62,7 @@ const Tasks = () => {
                     <FaInstagram className="text-pink-700 w-12 h-12 border border-[#2a2522] bg-white px-2 rounded-full" />
                     <div>
                       <p className="text-gray-300">Follow on Instagram</p>
-                      <p className="text-sm font-semibold text-center">+70000</p>
+                      <p className="text-sm font-semibold text-center">+10000</p>
                     </div>
                     <MdKeyboardArrowRight className="w-6 h-6 mt-2"/>
                   </div>
@@ -78,7 +78,7 @@ const Tasks = () => {
                   <FaTelegramPlane className="w-12 h-12 border border-[#2a2522] px-2 rounded-full" />
                     <div>
                       <p className="text-gray-300">Follow Telegram Community</p>
-                      <p className="text-sm font-semibold text-center">+50000</p>
+                      <p className="text-sm font-semibold text-center">+10000</p>
                     </div>
                     <MdKeyboardArrowRight className="w-6 h-6 mt-2"/>
                   </div>
@@ -107,7 +107,7 @@ const Tasks = () => {
                   <FaCircleDot className="text-yellow-600 w-12 h-12 border border-[#2a2522] bg-black px-2 rounded-full" />
                     <div>
                       <p className="text-gray-300">Invite 100 friends</p>
-                      <p className="text-sm font-semibold text-center">+50000</p>
+                      <p className="text-sm font-semibold text-center">+30000</p>
                     </div>
                     <MdKeyboardArrowRight className="w-6 h-6 mt-2"/>
                   </div>
