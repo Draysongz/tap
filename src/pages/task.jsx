@@ -49,7 +49,7 @@ const Tasks = () => {
                     <FaHandshake className="text-yellow-500 w-12 h-12 border border-[#2a2522] bg-[#271608] px-2 rounded-full" />
                     <div>
                       <p className="text-center">Invite Bonus</p>
-                      <p className="text-sm font-semibold text-center">up to 12000 token for you and your<br/> friend</p>
+                      <p className="text-sm font-semibold text-center">Get up to 12000 token for you and <br/>your friend</p>
                     </div>
                     <MdKeyboardArrowRight className="w-7 h-7 mt-2 pb-2"/>
                 </div>
