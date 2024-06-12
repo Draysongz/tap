@@ -9,6 +9,7 @@ import { IoMdStats } from "react-icons/io";
 import { SiGoogletasks } from "react-icons/si";
 import { FaFireAlt } from "react-icons/fa";
 import NextLink from 'next/link';
+import "./Dash.module.css"
 import Image from "next/image"
 import { Poppins } from 'next/font/google';
 import ProgressBar from './Progress';
@@ -23,6 +24,7 @@ const poppins = Poppins({
 const Dash = () => {
   const [isScaled, setIsScaled] = useState(false);
   const [count, setCount] = useState(0);
+  const [showOne, setShowOne] = useState(false);
   const [progress, setProgress] = useState(75);
 
   useEffect(() => {
@@ -33,8 +35,10 @@ const Dash = () => {
 
   const handleImageClick = () => {
     setCount(count + 1);
+    setShowOne(true);
     setIsScaled(true);
     setTimeout(() => {
+      setShowOne(false);
       setIsScaled(false);
     }, 500);
   };
@@ -52,7 +56,7 @@ const Dash = () => {
     <div className={`bg-[#000000] h-screen ${poppins.className} overflow-hidden`}>
       <div className="text-center text-white pt-4">
         <button className="border w-11/12 py-1 border-[#000000] bg-[#1f1f1f] mx-auto rounded-md text-lg flex justify-center mb-6">Join clan <MdKeyboardArrowRight className="w-5 h-5 mt-1" /></button>
-        <p className="text-6xl font-semibold pb-3">{count}</p>
+        <p className="text-6xl font-normal pb-3">{count}</p>
         <p className="text-md font-semibold"><span className="text-yellow-500">.</span> Level 1 <span className="text-yellow-500">.</span></p>
         <div className={`pt-12 transition-transform transform ${isScaled && 'scale-75'} mb-16`} onClick={handleImageClick}>
           <img 
@@ -62,6 +66,11 @@ const Dash = () => {
             alt={"Coin"}
           />
         </div>
+        {showOne && (
+          <div className='tapswap-coin'>
+            <span className="tapswap-coin__plus text-xl font-normal">+1</span>
+          </div>
+          )}
         <ProgressBar progress={100} />
       </div>
       <Flex

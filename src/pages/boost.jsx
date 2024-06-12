@@ -44,11 +44,11 @@ const Boost = () => {
               </div>
               <div className="two text-white">
                 <p className="pl-2 text-xl font-semibold">Boosters</p>
-                  <div className="border w-11/12 px-2 pt-6 pb-4 mb-4 mt-2 border-[#000000] rounded-md bg-[#2a2522] mx-auto">
+                  <div className="border w-11/12 px-2 pt-6 pb-4 mb-4 mt-2 border-[#000000] rounded-md bg-[#1f2221] mx-auto">
                   <div className="one flex justify-between pb-2">
-                    <SiFastapi className="w-12 h-12 border border-[#2a2522] bg-[#271608] px-2 rounded-full" />
+                    <SiFastapi className="w-12 h-12 border border-[#2a2522] bg-[#1f2221] px-2 rounded-full" />
                     <div>
-                      <p>Multitap Feature</p>
+                      <p className="text-[#2bc4c3]">Multitap Feature</p>
                       <p className="text-sm font-semibold text-center">2000 . 1M</p>
                     </div>
                     <MdKeyboardArrowRight className="w-6 h-6 mt-2"/>
@@ -56,24 +56,24 @@ const Boost = () => {
                   <div className="two flex justify-between pb-2">
                   <MdOutlineLocalDrink className="w-12 h-12 border border-[#2a2522] bg-[#271608] px-2 rounded-full" />
                     <div>
-                      <p>Daily Attempts</p>
+                      <p className="text-[#2bc4c3]">Daily Attempts</p>
                       <p className="text-sm font-semibold text-center">2000 . 1M</p>
                     </div>
                     <MdKeyboardArrowRight className="w-7 h-7 mt-2 pb-2"/>
                   </div>
                   <div className="three flex justify-between">
-                  <SiOpenmined className="w-12 h-12 border border-[#2a2522] bg-[#271608] px-2 rounded-full" />
+                  <SiOpenmined className="w-12 h-12 border border-[#2a2522] bg-[#1f2221] px-2 rounded-full" />
                     <div>
-                      <p>Auto Miner</p>
+                      <p className="text-[#2bc4c3]">Auto Miner</p>
                       <p className="text-sm font-semibold text-center">2000 . 1M</p>
                     </div>
                     <MdKeyboardArrowRight className="w-6 h-6 mt-2"/>
                   </div>
                 </div>
               </div>
-              <div className="three border w-11/12 rounded-md border-[#000000] bg-[#2a2522] mx-auto px-2 pt-6 pb-4 mb-16">
-                <IoDiamondOutline className="text-[#0089d2] mx-auto w-[65px] h-[65px] mb-2"/>
-                <h2 className="text-center text-yellow-600 font-semibold">Umaxcoin x2</h2>
+              <div className="three border w-11/12 rounded-md border-[#000000] bg-[#1f2221] mx-auto px-2 pt-6 pb-4 mb-16">
+                <IoDiamondOutline className="text-white mx-auto w-[65px] h-[65px] mb-2"/>
+                <h2 className="text-center text-[#2bc4c3] font-semibold">Umaxcoin x2</h2>
                 <p className="text-sm">Double your coins and level up even faster!</p>
                 <button className="text-sm font-semibold mt-4 ml-3 bg-gradient-to-r from-[#ffa800] to-[#f58333] w-11/12 text-center py-3 rounded-full">Play now</button>
               </div>
