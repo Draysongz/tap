@@ -21,7 +21,7 @@ import { IoMdStats } from "react-icons/io";
 import { SiGoogletasks } from "react-icons/si";
 import { FaFireAlt } from "react-icons/fa";
 import NextLink from "next/link";
-import "./Dash.module.css";
+import styles from "./Dash.module.css";
 import Image from "next/image";
 import { Poppins } from "next/font/google";
 import ProgressBar from "./Progress";
@@ -101,8 +101,8 @@ const Dash = () => {
             />
           </div>
           {showOne && (
-            <div className="tapswap-coin">
-              <span className="tapswap-coin__plus text-xl font-normal">+1</span>
+            <div className={styles.tapswapCoin}>
+              <span className="text-xl font-normal">+1</span>
             </div>
           )}
           <ProgressBar progress={100} />
