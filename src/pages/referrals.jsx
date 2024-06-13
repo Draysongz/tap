@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Card, CardBody, Flex, Text, Box, HStack, Icon , Tooltip,
     useColorModeValue,
     useBreakpointValue,
@@ -24,6 +24,8 @@ const poppins = Poppins({
 });
 
 const Referral = () => {
+  const [activeLink, setActiveLink] = useState("/referrals");
+
     const navData = [
         { icon: MdGroups, title: "Ref", link: "/referrals" },
        {icon : SiGoogletasks, title: 'Tasks', link: '/task'},
@@ -31,6 +33,10 @@ const Referral = () => {
        {icon: FaFireAlt, title:'Boost', link: '/boost'},
        {icon: IoMdStats, title: 'stats' , link: '/stats'}
      ];
+
+     const handleNavClick = (link) => {
+      setActiveLink(link);
+    };
 
     return(
         <>
@@ -68,36 +74,28 @@ const Referral = () => {
           bottom={0}
           left={0}
           right={0}
-          
           color={useColorModeValue("#fff", "#fff")}
           p={3}
           justifyContent="space-around"
           zIndex={1}
-          display={useBreakpointValue({base: 'flex', md: 'flex', lg: 'none'})}
-          bgColor={'#1f2221'}
+          display={useBreakpointValue({ base: "flex", md: "flex", lg: "none" })}
+          bgColor={"#1f2221"}
         >
           {navData.map((item, index) => (
-            <Tooltip
-              
-              hasArrow={index == 1 ? true : false}
-              placement="top"
-            >
+            <Tooltip hasArrow={index === 1} placement="top" key={item.title}>
               <Flex
-                key={item.title}
                 flexDir="column"
                 align="center"
                 as={NextLink}
                 href={item.link}
+                onClick={() => handleNavClick(item.link)}
+                className={activeLink === item.link ? "text-[#2bc4c3]" : ""}
               >
                 <Icon as={item.icon} boxSize={5} mb={2} />
                 <Text fontSize={{ base: "xs", md: "md" }}>{item.title}</Text>
               </Flex>
-              
             </Tooltip>
           ))}
-
-          
-          
         </Flex>
         </div>
         </>

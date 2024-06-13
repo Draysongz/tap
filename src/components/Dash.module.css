@@ -1,23 +1,18 @@
 .tapswap-coin {
-  position: relative;
-  display: inline-block;
-}
-
-.tapswap-coin::after {
-  content: "+1";
   position: absolute;
+  display: inline-block;
+  animation-name: bounce;
+  animation-duration: 2s;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 1.5em;
-  color: #fff;
-  background-color: #333;
-  padding: 0.5em 1em;
-  border-radius: 0.5em;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
 }
 
-.tapswap-coin.tapped::after {
-  opacity: 1;
+@keyframes bounce {
+  0% {
+    top: 90%;
+  }
+  100% {
+    top: 10%;
+  }
 }
