@@ -101,8 +101,8 @@ const Dash = () => {
             />
           </div>
           {showOne && (
-            <div className={styles.tapswapCoin}>
-              <span className="text-xl font-normal">+1</span>
+            <div className={styles.umaxCoin}>
+              <span className="text-2xl font-normal">+1</span>
             </div>
           )}
           <ProgressBar progress={100} />
