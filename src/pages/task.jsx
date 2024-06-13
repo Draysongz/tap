@@ -49,11 +49,11 @@ const Tasks = () => {
         <div className="pt-10 bg-[#000000] h-full pb-12">
             <div className={`earn text-white ${poppins.className}`}>
               <div>
-                <FaSackDollar className="text-yellow-500 w-20 h-20 mb-3 mx-auto" />
+                <FaSackDollar className="text-[#2bc4c3] w-20 h-20 mb-3 mx-auto" />
               <p className="text-center text-xl font-semibold pb-4">Earn more UmaxCoin</p>
               <div className="border w-11/12 px-2 py-2 mb-4 mt-2 border-[#000000] rounded-md bg-[#1f2221] mx-auto">
                   <div className="one flex justify-between pb-2">
-                    <FaHandshake className="text-yellow-500 w-12 h-12 border border-[#2a2522] bg-[#271608] px-2 rounded-full" />
+                    <FaHandshake className="text-[#2bc4c3] w-10 h-10" />
                     <div>
                       <p className="text-center text-[#2bc4c3]">Invite Bonus</p>
                       <p className="text-sm font-semibold text-center">Get up to 12000 Token for you<br/> and your friend</p>

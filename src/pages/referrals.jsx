@@ -45,11 +45,11 @@ const Referral = () => {
         </Head>
         <div className="bg-[#000000] text-lg text-white h-screen">
             <div className={`pt-12 ${poppins.className}`}>
-              <FaHandshake className="w-20 h-20 mx-auto text-yellow-500" />
+              <FaHandshake className="w-20 h-20 mx-auto text-[#2bc4c3]" />
               <p className="text-center pt-2 font-semibold text-2xl pb-6">0 Friends</p>
               <p className="w-11/12 border border-[#000000] mx-auto px-2 py-1 bg-[#1f2221] text-center text-lg rounded-md font-semibold mb-3">+0 UmaxCoin</p>
               <div>
-                <p className="pl-4 text-lg text-yellow-600 font-semibold pb-2">Invite friends to get bonuses</p>
+                <p className="pl-4 text-lg text-[#2bc4c3] font-semibold pb-2">Invite friends to get bonuses</p>
                 <div className="rounded-md w-11/12 border border-[#000000] bg-[#1f2221] mx-auto px-2 py-3">
                 <div className="flex justify-center">
                   <div className="">
@@ -66,7 +66,7 @@ const Referral = () => {
                   </div>
                 <p className="text-white font-semibold text-sm text-center">FOR YOU AND A FRIEND</p>
                 </div>
-                <button className="text-sm font-semibold mt-4 ml-3 bg-gradient-to-r from-yellow-400 to-yellow-600 w-11/12 text-center py-3 rounded-full">Invite a friend</button>
+                <button className="text-sm font-semibold mt-4 ml-3 bg-gradient-to-r from-[#2bc4c3] to-blue-600 w-11/12 text-center py-3 rounded-full">Invite a friend</button>
               </div>
             </div>
             <Flex
