@@ -7,7 +7,7 @@ const ProgressBar = ({ progress }) => {
     >
       <div
         style={{ width: `${progress}%` }}
-        className={`h-full bg-yellow-400 rounded-full`}
+        className={`h-full bg-[#2bc4c3] rounded-full`}
       ><p className='text-sm text-center font-semibold'>100%</p></div>
     </div>
   );
